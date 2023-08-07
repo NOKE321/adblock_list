@@ -1,9 +1,9 @@
 [uniartisan's Adblock List Lite]
-! Version: 202308060157
+! Version: 202308070121
 ! Title:  uniartisan's Adblock List Lite
 ! Expires: 1 days (update frequency)
 ! URL = https://github.com/uniartisan/adblock_list
-! Lenth = 21576
+! Lenth = 21589
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
 #%#var AG_abortOnPropertyWrite=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeSet:function(){b&&console.warn("AdGuard aborted property write: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -1837,6 +1837,7 @@
 @@||gias.jd.com/js/td.js
 @@||gifshow.com/rest/wd/common/log/collect/acfun
 @@||github.io/videojs-ima/node_modules/video.$domain=setn.com
+@@||gk.sina.cn/v1/gkmatch?
 @@||golangnote.com^$generichide
 @@||gomein.net.cn^*,
 @@||goodinfo.tw/StockInfo/image/*.png
@@ -7912,6 +7913,7 @@ sina.cn###j_toTop ~ .fl_suspension_template
 sina.cn###midThreeAds
 sina.cn###promotionCover
 sina.cn##.article-sax
+sina.cn##.callApp_fl_btn
 sina.cn##.dfz_sd_news > a[href*=".10086.cn"]
 sina.cn##.j_article_cutpic
 sina.cn##.js-voice-yyy
@@ -9669,6 +9671,7 @@ zzzyk.com###Tinfo
 ||136.0.56.196^
 ||1368999.com^
 ||137.175.69.92^
+||1378a.xyz^
 ||1379a.xyz^
 ||1381a.xyz^
 ||1383a.xyz^
@@ -13599,6 +13602,7 @@ zzzyk.com###Tinfo
 ||egptz.cyou^
 ||egrnmic.cn^
 ||egsxdp.cn^
+||eheb8.cn^
 ||eiadf.xyz^
 ||eic.org.cn/api/Popup?
 ||eic.org.cn^*/analytics
@@ -14215,6 +14219,7 @@ zzzyk.com###Tinfo
 ||ggg*.com/static/js/common.js
 ||ggglxue.cn^
 ||gggppp666.com^
+||gghmef7.com^
 ||ggjs.d17.cc^
 ||ggqnre.xyz^
 ||ggrhsx.cn^
@@ -14488,6 +14493,7 @@ zzzyk.com###Tinfo
 ||h6cp.icu^
 ||h731.icu^
 ||habyc.com^
+||hacde3.icu^
 ||hacde5.icu^
 ||hacde6.icu^
 ||hackhome.com/js/*top.js
@@ -14738,6 +14744,7 @@ zzzyk.com###Tinfo
 ||hjfile.cn/lib/uzhi/uzt.
 ||hjfile.cn/site/hj-lzs/
 ||hjfile.cn/site/js/pop_gift_plugin.js
+||hjgkr0g.xyz^
 ||hjgrc.xyz^
 ||hjkiguy.com^
 ||hjpqt.cn^
@@ -16216,6 +16223,7 @@ zzzyk.com###Tinfo
 ||kvtlll.top^
 ||kvtnnn.top^$third-party
 ||kwadakesd.cyou^
+||kwcmrfb.cn^
 ||kweaake.cyou^
 ||kwflvcdn.000dn.com^*.flv
 ||kwivb.cn^
@@ -16568,6 +16576,7 @@ zzzyk.com###Tinfo
 ||lpxmall.com^
 ||lqe3.icu^
 ||lqglqq.com^
+||lqjinx.xyz^
 ||lqnggnsl.fun^
 ||lqrvkxk.cn^
 ||lr6e.top^
@@ -16955,6 +16964,7 @@ zzzyk.com###Tinfo
 ||mjxtiht.cn^
 ||mk795.cn^
 ||mkd88.cc/16.32.jpg
+||mkjnha.com^
 ||mlog.aipai.com^
 ||mlstx.cn^
 ||mlsynmlx.fun^
@@ -17224,6 +17234,7 @@ zzzyk.com###Tinfo
 ||nanlisgc.fun^
 ||nanrenfuli.*/zb_users/upload/
 ||nanrenvip2021.com/old.html
+||naqiwjj.icu^
 ||nb.zol.com.cn/detail_*.html
 ||nbazhaheic.top^
 ||nbegame.com/nbeos/*.jpg
@@ -18872,6 +18883,7 @@ zzzyk.com###Tinfo
 ||simi567.me^
 ||similm.me^
 ||sina.cn*/view?
+||sina.cn/check?
 ||sina.cn/cm/sinaads_
 ||sina.cn/interface/*_game_wap_home_mid_list_in.
 ||sina.cn^*/impress?
@@ -20135,6 +20147,7 @@ zzzyk.com###Tinfo
 ||vvvkp.com/template/ttk/img/
 ||vvwuqxp.icu^
 ||vw66i.top^
+||vwfppr.xyz^
 ||vwtjvd.xyz^
 ||vwvjzd.xyz^
 ||vx2e.top^
