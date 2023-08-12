@@ -1,9 +1,9 @@
 [uniartisan's Adblock List Lite]
-! Version: 202308110139
+! Version: 202308120107
 ! Title:  uniartisan's Adblock List Lite
 ! Expires: 1 days (update frequency)
 ! URL = https://github.com/uniartisan/adblock_list
-! Lenth = 21674
+! Lenth = 21696
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
 #%#var AG_abortOnPropertyWrite=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeSet:function(){b&&console.warn("AdGuard aborted property write: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -741,7 +741,6 @@
 3dmgame.com##a[href*=".chuangmengsy.xyz"]
 3dmgame.com##a[href^="https://down.hyds360.com/"] > div[style]
 3dmgame.com#?#.downl_list:-abp-has(style)
-3dpchip.com#%#//scriptlet('set-constant', 'alert', 'undefined')
 3g.163.com##.ne_rps
 3g.baidu.com,m.baidu.com,m5.baidu.com,www.baidu.com###banner_call + div[id]
 3g.baidu.com,m.baidu.com,m5.baidu.com,www.baidu.com#?#div:-abp-has(>.openBox-container)
@@ -3268,7 +3267,9 @@ cankaoxiaoxi.com###qihupic
 caoporn.com###bottom-gg1
 caoporn.com###feadback-content
 caoporn.com###middleimg
+caoporn.com##.container + #wrapper:not(.container)
 caoporn.com##.jw-icon-replay-contain > div[style^="display: block; position: absolute; background-color: white; width:"]
+caoporn.com##div[style="height:160px; max-width:100%; width:945px; padding-top:10px; margin:0px auto;"]
 cardu.com.tw###crazy_layer
 cardu.com.tw##.diamond-txt-ad
 cardu.com.tw##.gold-big-ad
@@ -7868,6 +7869,7 @@ seseda90.com###clone_ad
 seselah.com###video-ads
 setn.com###FBAnchor
 setn.com###aspnetForm > .rightFloat
+setn.com##.e_ad
 setn.com##.header-left-banner
 setn.com##.header-right-banner-b
 setn.com##.rightFloat
@@ -9925,6 +9927,7 @@ zzzyk.com###Tinfo
 ||239300.net/template/*_mh_gg
 ||23aitt.com/zz/
 ||23bei.com/static/plugins/layer/layer.
+||23dhj4q.com^
 ||23dsf.top^
 ||23img.com^*/qomnyi.
 ||23jgiy.com^
@@ -10021,6 +10024,7 @@ zzzyk.com###Tinfo
 ||3336672.com^
 ||3336673.com^
 ||3336691.com^
+||3337126.com^
 ||3337706.com^
 ||3337723.com^
 ||3337729.com^
@@ -10034,6 +10038,8 @@ zzzyk.com###Tinfo
 ||3337781.com^
 ||3337783.com^
 ||3337785.com^
+||3338637.com^
+||3338652.com^
 ||3338808.com^
 ||3338863.com^
 ||3338877.com^
@@ -10085,6 +10091,7 @@ zzzyk.com###Tinfo
 ||36dfsa.com^
 ||36dm.club/javascripts/apsidemoot.js
 ||36kr.com/pp/api/ap/plan?
+||36mghtd.xyz^
 ||36nl.com^
 ||373nn.com/java/
 ||375772rug.com^
@@ -11750,6 +11757,7 @@ zzzyk.com###Tinfo
 ||baiducom.bj.bcebos.com^
 ||baidudbvjksbvs.com^
 ||baidudsvbshj.com^
+||baidudvbjkbssjvsvv.com^
 ||baidufkjnvbdsn.com^
 ||baiduisjkbvsjkl.com^
 ||baidujavascript.com^
@@ -12383,6 +12391,7 @@ zzzyk.com###Tinfo
 ||caomeixz7.xyz^
 ||caoporn.com/ggs.php
 ||caoporn.com/images/bmqp
+||caoporn.com/templates/frontend/dark-blue/js/caoaa5.js
 ||caozhixiong.cn^
 ||capldfw.cn^
 ||car.pchome.com.tw/iframe/news_iframe.
@@ -12858,6 +12867,7 @@ zzzyk.com###Tinfo
 ||craa.fun^
 ||crayon.meishichina.com^
 ||creaders.net*/ad_func.js
+||creative.141live.com/widgets/Spot/
 ||creawww.top^
 ||crf999.cn^
 ||crhyqq.com^
@@ -13133,6 +13143,7 @@ zzzyk.com###Tinfo
 ||demaxiya.com/v4/dd/
 ||denghaishan1.cn^
 ||denpvh.xyz^
+||derew6xbsc.xyz^
 ||dertyhsf.xyz^
 ||destc10.icu^
 ||destc8.icu^
@@ -13459,6 +13470,7 @@ zzzyk.com###Tinfo
 ||dushiken.cn^
 ||dushiyanqing.net/mobile/lib/ccppcc.js
 ||dutuo4.top^
+||duyvtanrheje.xyz^
 ||dvaimso.cn^
 ||dvbnmikxh.xyz^
 ||dvr8.com^
@@ -13645,6 +13657,7 @@ zzzyk.com###Tinfo
 ||efyt6.com^$third-party
 ||eganilglw.cyou^
 ||eghyahl.cn^
+||egipsbvlgn.xyz^
 ||egnlaigw.fun^
 ||egptz.cyou^
 ||egrnmic.cn^
@@ -14889,6 +14902,7 @@ zzzyk.com###Tinfo
 ||hqcx.net/images/baidu.jpg
 ||hqcx.net/index.php?m=poster&
 ||hqdfh.mobi^
+||hqdlhgx.cn^
 ||hqdoor.com/Web/
 ||hqgearb.icu^
 ||hqol.cn/up/ad/
@@ -15045,6 +15059,7 @@ zzzyk.com###Tinfo
 ||i.alipayobjects.com/i/ecmng/$image,domain=my.alipay.com
 ||i.imgur.com^$domain=av.movie
 ||i0l7.icu^
+||i100.cao-gao.xyz/aimgs/
 ||i322.com/ad_avshow/
 ||i3535.com^$third-party
 ||i3yz.icu^
@@ -15607,6 +15622,7 @@ zzzyk.com###Tinfo
 ||jh001.cc^
 ||jh16csf.com^
 ||jhgtf.com^
+||jhkggrr.icu^
 ||jhlazsot.icu^
 ||jhlxfw.cn^
 ||jhxcld.xyz^
@@ -16499,6 +16515,7 @@ zzzyk.com###Tinfo
 ||lindanmiaoxiang.cn^
 ||linecg.com/uploads/banner/
 ||lingdianshuwu.com/js/content
+||lingsiqiwu.com^
 ||link114.cn/template/js/showpics_
 ||linkhelper.cn/mmshow
 ||linkpicture.com^$third-party
@@ -16543,6 +16560,7 @@ zzzyk.com###Tinfo
 ||lkjrx.xyz^
 ||lkmhn.com^
 ||lkmxqq.com^
+||lknhrnd.com^
 ||lknnbd.xyz^
 ||lkqyqwk.xyz^
 ||lksdj.com^
@@ -19511,6 +19529,7 @@ zzzyk.com###Tinfo
 ||theporn.xyz/static/bet365.gif
 ||theporn.xyz/static/tmp/
 ||thesac2.top^
+||thesac3.top^
 ||thesac7.top^
 ||thesac8.top^
 ||theta.sogoucdn.com^
@@ -19749,6 +19768,7 @@ zzzyk.com###Tinfo
 ||tuoshi168.com^
 ||tuotianxia.top^
 ||tupian55.com^*.gif
+||tuplzt.xyz^
 ||turifb.xyz^
 ||tushwjp.icu^
 ||tutudao.net/js/gg*.js
@@ -20648,6 +20668,7 @@ zzzyk.com###Tinfo
 ||xhd.cn/topic/leyu-piaofu/
 ||xhflovezyy.asia^
 ||xhi8.xyz^
+||xhiit0n.xyz^
 ||xhiteam.club^
 ||xhjxkgc.cn^
 ||xhl161.com^
@@ -21165,6 +21186,7 @@ zzzyk.com###Tinfo
 ||yrqwnc.cn^
 ||yrr56.com/mp4/pt_720.
 ||yrszy.com.cn^
+||yruws6.com^
 ||ys.muhoujiemi.com^
 ||ys2000.cdn.bcebos.com^
 ||ys3g.top^
