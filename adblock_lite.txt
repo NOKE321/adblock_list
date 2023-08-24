@@ -1,9 +1,9 @@
 [uniartisan's Adblock List Lite]
-! Version: 202308230109
+! Version: 202308240110
 ! Title:  uniartisan's Adblock List Lite
 ! Expires: 1 days (update frequency)
 ! URL = https://github.com/uniartisan/adblock_list
-! Lenth = 21853
+! Lenth = 21863
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
 #%#var AG_abortOnPropertyWrite=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeSet:function(){b&&console.warn("AdGuard aborted property write: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -1685,12 +1685,14 @@
 @@||cdn.bootcss.com/fuckadblock/3.2.1/fuckadblock.min.js$domain=share1223.com
 @@||cdn.bootcss.com^$script,domain=59xs.com|biqudd.com|luoqiuzw.com|u33.me|xbiqugela.com|xhtxt.cc|xs98.me|ysxs8.vip
 @@||cdn.doublemax.net/js/rwd_cap.js$domain=ibf.tw
+@@||cdn.jsdelivr.net^$script,domain=movieffm.net
 @@||cdn.jsdelivr.net^$script,domain=yemancomic.com
 @@||cdn.optimizely.com/js/*.js$domain=kktv.me
 @@||cdn.rawgit.com/*/lazyload.js$domain=javmost.com
 @@||cdn.runative-syndicate.com/sdk/*/n.js$domain=onemanhua.com
 @@||cdn.sssam.com/static/js/*.js
 @@||cdn.staticfile.org^$script,domain=00ksw.com|147xiaoshuo.com|91zww.com|biququ.info|bxwx.live|lzbao.net|shenzu.org
+@@||cdn.staticfile.org^$script,domain=movieffm.net
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/3.2.1/fuckadblock.min.js$domain=papalah.com
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/*/videojs.ads.min.js$domain=linetv.tw
 @@||cgmodel.com/plugin/share/
@@ -3136,8 +3138,6 @@ blog.csdn.net##div[style="min-height:250px;"]
 blog.csdn.net##dl[id^="yd_a_d_feed_"]
 blog.icook.tw##span[class^="style_adUnit"]
 blog.iportable.in##body > b[style="z-index: 10000;"]
-blog.reh.tw#%#//scriptlet("prevent-setTimeout", "killads.offsetHeight === 0")
-blog.reh.tw#@#.adsbygoogle
 blog.sina.cn###pl-ad-after-comments
 blog.sina.cn###pl-adtop-bar
 blog.sina.cn###pl-blog-artad
@@ -8055,7 +8055,6 @@ slashlook.com#$#body.modal-open { padding-right: 0!important; overflow: visible!
 slashlook.com#%#window.canRunAds = true;
 slashview.com##div[id^="Advertis"]
 slashview.com#$##SlashviewAdDetector { display: block !important; }
-slashview.com#@#.adsbygoogle
 slit.cn#%#//scriptlet("abort-current-inline-script", "alert", "typeof(ad)")
 sm.cn###download-uc
 sm.cn###download-uc-v2
@@ -8141,7 +8140,6 @@ so.com##li[data-cpc_query]
 so.com##li[data-id^="cm_display_init_text_"]
 so.lenovo.com.cn##.AdSite
 sobaigu.com##a[href^="https://cloud.tencent.com/redirect.php?"][target="_blank"][rel="noopener"] > img
-sockscap64.com#@#.adsbygoogle
 soft-down.net##.box-top-xiazai
 soft.macx.cn#@##googlead
 soft.macx.cn#@##googlead1
@@ -10121,6 +10119,7 @@ zzzyk.com###Tinfo
 ||380.tw^$popup,third-party
 ||380tv.com/upload/*-ad-
 ||387635.com^
+||38kmute.xyz^
 ||39.net/PictureLib/A/f76/20160825/org_749281.png
 ||39.net/PictureLib/A/f76/20170814/org_1428963.gif
 ||39.net/a.htm?
@@ -11884,6 +11883,7 @@ zzzyk.com###Tinfo
 ||bcquan.me/front/*_ad
 ||bcquan.me/front/*_game
 ||bcquan.me/front/home/render
+||bcsijjgck.xyz^
 ||bcvxfgy.xyz^
 ||bd*-ys.km.com^
 ||bd-china-1.appmobile.cn^
@@ -14618,6 +14618,7 @@ zzzyk.com###Tinfo
 ||h731.icu^
 ||habyc.com^
 ||hacde1.icu^
+||hacde10.icu^
 ||hacde3.icu^
 ||hacde5.icu^
 ||hacde6.icu^
@@ -16232,6 +16233,7 @@ zzzyk.com###Tinfo
 ||kjndc.xyz^
 ||kju369.cn^
 ||kjugr.xyz^
+||kjvaqbyebqarl.top^
 ||kjvnfhdgb.com^
 ||kjwx8.com^
 ||kjwysxs.cn^
@@ -17778,6 +17780,7 @@ zzzyk.com###Tinfo
 ||oqpgq.top^
 ||oqshoyd.cn^
 ||oqxep.cn^
+||oqyiapj.cn^
 ||orgaorg.com^
 ||oronwg.xyz^
 ||oroqikj.cn^
@@ -18174,6 +18177,7 @@ zzzyk.com###Tinfo
 ||proewildfire.cn/fd.js
 ||proginn.com/cms/10000/
 ||programmer-club.com.tw/images/uuu/
+||prokyrn.icu^
 ||property.hk/js/adside.js
 ||prplads.com^
 ||prtlth.xyz^
@@ -18927,6 +18931,7 @@ zzzyk.com###Tinfo
 ||scupio.com/adpinline/
 ||scw98.com/ADMM.
 ||scw98.com/js/Index
+||sd01you.com^
 ||sd124.com/statics/mystyle/js/1699.js
 ||sd173.com/images/
 ||sd1f.top^
@@ -18963,6 +18968,7 @@ zzzyk.com###Tinfo
 ||selenaroberta.com^
 ||semaobf1.com^
 ||sensifyfugged.com^
+||sentcss.com/get/cors/spread/
 ||seojiaoshi.cn/banner/
 ||seowhy.com/ask/img/*gg
 ||seqing.world/qq/qq.js
@@ -20646,6 +20652,7 @@ zzzyk.com###Tinfo
 ||wpercent.qwertyuadf.com^
 ||wpiwoo.xyz^
 ||wples.com/pc/common.js
+||wpoarjokzgi.com^
 ||wpozwh.com^
 ||wpqsmse.cn^
 ||wqdro6us.icu^
@@ -21050,6 +21057,7 @@ zzzyk.com###Tinfo
 ||xxhh.com/xh.js
 ||xxhp2iz.icu^
 ||xxl.bt-xd.com^$third-party
+||xxniln.xyz^
 ||xxooos.com/mm/
 ||xxp123.live^
 ||xxsmcps.com^
@@ -21119,6 +21127,7 @@ zzzyk.com###Tinfo
 ||yaozui.com/ref/index?
 ||yaseok.com//static/src/images/loading.gif
 ||yaseok.com/uploads/20*.gif
+||yasg114.com^
 ||yatemy.cn^
 ||yb0a.xyz^
 ||ybayck.xyz^
@@ -21723,6 +21732,7 @@ zzzyk.com###Tinfo
 ||zpfqolj.cn^
 ||zpgjz.com/cdn/new1/4.gif
 ||zpiyi.com/public/js/global.js
+||zpotkvpy.icu^
 ||zppfjh.xyz^
 ||zpsh.shop^
 ||zq.lansedir.com^
