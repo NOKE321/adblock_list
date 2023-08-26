@@ -1,9 +1,9 @@
 [uniartisan's Adblock List Lite]
-! Version: 202308250117
+! Version: 202308260127
 ! Title:  uniartisan's Adblock List Lite
 ! Expires: 1 days (update frequency)
 ! URL = https://github.com/uniartisan/adblock_list
-! Lenth = 21883
+! Lenth = 21897
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
 #%#var AG_abortOnPropertyWrite=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeSet:function(){b&&console.warn("AdGuard aborted property write: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -1231,6 +1231,7 @@
 9xav.cc#%#//scriptlet('remove-class', 'q-body--prevent-scroll', 'body')
 9xav.cc#?#div[class]:not([class*=" "]):has(> span[class*=" "] > a[href^="https://"][target="_blank"])
 ://*.tv/ad/$domain=~moviedj.tv
+://*.z*.xyz/$object,third-party
 ://*:*/chunyu.html?k=$csp=script-src
 ://*:*/oklist/vars.js
 ://*:*/yeyue.html?k=$csp=script-src
@@ -4732,6 +4733,7 @@ gamer.com.tw,pili.com.tw#@#.text-ads
 gamer.com.tw,pili.com.tw#@#.textAd
 gamer.com.tw,pili.com.tw#@#.text_ad
 gamer.com.tw,pili.com.tw#@#.text_ads
+gamer.com.tw,~buy.gamer.com.tw##a[href^="https://buy.gamer.com.tw"]
 gamersglobal.de#@#.gg-box
 gamersky.com##.downLoadGame-2
 gamersky.com##.downLoadGame-2 + .dl_url
@@ -6484,8 +6486,8 @@ ltn.com.tw##.list > li[id^="newspaper-native"]
 ltn.com.tw##.ltn_ad
 ltn.com.tw##.suggest_full .C5
 ltn.com.tw##A[href*="draw.ltn.com.tw"]
-ltn.com.tw##DIV[class*="adHeight"]
 ltn.com.tw##[data-desc="內廣"]
+ltn.com.tw##div[class*="adHeight"]
 ltn.com.tw##div[class^="market300"]
 ltn.com.tw##div[id^="ad-"]
 ltn.com.tw##div[id^="compass-fit"]
@@ -10832,6 +10834,7 @@ zzzyk.com###Tinfo
 ||9a6cds03.com^
 ||9as3.xyz^
 ||9bph.top^
+||9cc9ckp.com^
 ||9cgms.xyz^
 ||9duw.com/js/sj
 ||9duw.com/pic/
@@ -12051,6 +12054,7 @@ zzzyk.com###Tinfo
 ||beryl3.cc^
 ||berylnbb.com^
 ||besc.baidustatic.com^
+||beste1.icu^
 ||bestialvehemence.com^
 ||bestpush.pconline.com.cn^
 ||bestqikan.com/static/js/swt.js
@@ -12061,6 +12065,7 @@ zzzyk.com###Tinfo
 ||bf99.com/User*/Ad_
 ||bf99.com/User/Images/bg_Blued.jpg
 ||bfdaawe.top^
+||bfdcuy9.com^
 ||bfjk360.com^
 ||bfpgf.com/wp-content/uploads/2015/08/360dxs.jpg
 ||bfsqtsn.cn^
@@ -14112,6 +14117,7 @@ zzzyk.com###Tinfo
 ||frgeob.xyz^
 ||frontendjs.com/api/ad
 ||frpns.com^
+||frrhdl.xyz^
 ||frsejhged.xyz^
 ||frxcdn.xyz^
 ||fsclzs.com/Ad_User/
@@ -14970,6 +14976,7 @@ zzzyk.com###Tinfo
 ||howbuy.com/subject/js/layer/layer.js
 ||hpcwwd.com^
 ||hpfbiu.com^
+||hpgmkbt.icu^
 ||hpjzpn.xyz^
 ||hppmy.cn^
 ||hpt73.cn^$domain=9xav.cc
@@ -15017,6 +15024,7 @@ zzzyk.com###Tinfo
 ||htkk2.top^
 ||htqyy.com/kiees/
 ||httpcn.com/Images/banner
+||httpcn.com/m/tg/
 ||httpwwwdcom.com/js/aaa/
 ||htvixv.xyz^
 ||hu.xbhy.com^
@@ -16568,6 +16576,7 @@ zzzyk.com###Tinfo
 ||lh54.top^
 ||lhare.xyz^
 ||lhdlbp.xyz^
+||lhgwcvw.cn^
 ||lhiefl.com^
 ||lhot.xyz^
 ||lhotajl.icu^
@@ -17015,6 +17024,7 @@ zzzyk.com###Tinfo
 ||mdjf9vh9.xyz^
 ||mdqhyxe.cn^
 ||mdqpkdne.xyz^
+||mdwhxw.com^
 ||me360.com/swt/swt.js
 ||me680.com/js/*.js
 ||mecop.cyou^
@@ -17444,6 +17454,7 @@ zzzyk.com###Tinfo
 ||neets.cc/assets/js/dup.js
 ||nefbjp.xyz^
 ||neg2zos.icu^
+||neghes.fun^
 ||neiod.xyz^
 ||neipa.xyz^
 ||nektonsrutate.com^
@@ -17873,6 +17884,7 @@ zzzyk.com###Tinfo
 ||p1.zhongyoo.com^
 ||p11q.cn^
 ||p23jac.top^
+||p2kfynrr.icu^
 ||p2oh1.xyz^
 ||p2p.v.yyclouds.com/crossdomain.xml
 ||p2peye.com/ajax.php?mod=ad&
@@ -20205,6 +20217,7 @@ zzzyk.com###Tinfo
 ||uwumr.cn^
 ||uxcnhsf.cn^
 ||uxlidt.ink^
+||uxlqwra.cn^
 ||uxmwh0f.xyz^
 ||uxtruz.xyz^
 ||uxwkiyp.xyz^
@@ -21594,6 +21607,7 @@ zzzyk.com###Tinfo
 ||zgm1.com^
 ||zgnlaigq.fun^
 ||zgtwzq.xyz^
+||zgwsnw.xyz^
 ||zgyvg.top^
 ||zgzlw.biz^
 ||zhainanba.org/ac/
