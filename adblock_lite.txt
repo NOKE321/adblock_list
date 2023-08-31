@@ -1,9 +1,9 @@
 [uniartisan's Adblock List Lite]
-! Version: 202308300154
+! Version: 202308310130
 ! Title:  uniartisan's Adblock List Lite
 ! Expires: 1 days (update frequency)
 ! URL = https://github.com/uniartisan/adblock_list
-! Lenth = 21862
+! Lenth = 21872
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
 #%#var AG_abortOnPropertyWrite=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeSet:function(){b&&console.warn("AdGuard aborted property write: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -11671,6 +11671,7 @@ zzzyk.com###Tinfo
 ||azureedge.net/wp-content/uploads/*-AD0
 ||b.kouke5.com^
 ||b.unjs.com^
+||b0ufmrzl.icu^
 ||b1.51scw.net^
 ||b1.91jucai.com^
 ||b1.b2b168.com^
@@ -12098,6 +12099,7 @@ zzzyk.com###Tinfo
 ||bihaipack.com^
 ||bikannovel.com^
 ||biketo.com/d/file/p/
+||bilec.xyz^
 ||bilibili.com/html/ads-index.js
 ||bilibili.com/x/web-interface/archive/special/recommend?aid=
 ||bilibilijj.com/image/right_bottom.gif
@@ -12268,6 +12270,7 @@ zzzyk.com###Tinfo
 ||bs7li.cn^
 ||bsanciv.top^
 ||bsaq5.cn^
+||bsbaswq.cn^
 ||bshare.cn/bshare_view?Callback=
 ||bslbahv.top^
 ||bsnge.xyz^
@@ -12396,6 +12399,7 @@ zzzyk.com###Tinfo
 ||c9r05q.com^
 ||c9tt3jj.top^
 ||ca.cbsi.com.cn/rpv?
+||ca.yangshengtv.com^
 ||ca30f.top^
 ||caaie.xyz^
 ||caardinal.com^
@@ -12501,7 +12505,6 @@ zzzyk.com###Tinfo
 ||cdn.haocaa.com^
 ||cdn.haokongbu1.com^*.js
 ||cdn.shdsp.net/ad
-||cdn.sinam.top^
 ||cdn.upthinking.cn^$third-party
 ||cdn.vidcrunch.com/integrations/*_Responsive_Floating_DFP_$domain=discuss.com.hk
 ||cdn.wenzhangba.cn^
@@ -12573,6 +12576,7 @@ zzzyk.com###Tinfo
 ||chazidian.com/mobile_general_
 ||chazidian.com/statics/images/wangke.jpg
 ||chdbits.co/pic/*-*.gif
+||cheda1.icu^
 ||chenfoo.cn^
 ||chengdu.cn/acts/phoneqss/openCornerWin/
 ||chengduda.top^
@@ -13533,6 +13537,7 @@ zzzyk.com###Tinfo
 ||dwstatic.com^*/newsPopup/
 ||dwstatic.com^*/p/livetip/
 ||dwstatic.com^*/sidebar.js
+||dwyngjb.icu^
 ||dxg*.com/img/A*.js
 ||dxg*.top/img/A*.js
 ||dxg0070.top/img/
@@ -15055,6 +15060,7 @@ zzzyk.com###Tinfo
 ||hujunhao.name^
 ||huluxia.com^$third-party
 ||humgrww.xyz^
+||hummingexam.com^
 ||hunlimd.cn^
 ||huo720.com/back/ad_
 ||huobaowang.com/meeting/js/hbchat.
@@ -17268,6 +17274,7 @@ zzzyk.com###Tinfo
 ||mt66g.com^
 ||mtawcy.xyz^
 ||mtburn.com^$third-party
+||mtienlx.top^
 ||mtime.cn/library/*/ECommerce/GoodsAndFeatureCtrl.js
 ||mtime.cn/tg/
 ||mtur.xkmnbt.xyz^
@@ -18613,7 +18620,9 @@ zzzyk.com###Tinfo
 ||rbazhaheiz.top^
 ||rbbbdj.xyz^
 ||rbodwtj.icu^
+||rbrbr88p.cn^
 ||rbrv9.cn^
+||rbsodzgoy.xyz^
 ||rbvi.top^
 ||rbxunao.cn^
 ||rc.ie13.com^
@@ -19425,6 +19434,7 @@ zzzyk.com###Tinfo
 ||steelcn.cn/img/bj_*_146_315.jpg
 ||stgowan.com^
 ||stheadline.com/images/heading-jm
+||stienlb.top^
 ||stockstar.com/*DUILIAN&t=
 ||stockstar.com/api/?id=
 ||stockstar.com/info/1200x90/
