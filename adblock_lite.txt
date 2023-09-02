@@ -1,9 +1,9 @@
 [uniartisan's Adblock List Lite]
-! Version: 202309010124
+! Version: 202309020139
 ! Title:  uniartisan's Adblock List Lite
 ! Expires: 1 days (update frequency)
 ! URL = https://github.com/uniartisan/adblock_list
-! Lenth = 21886
+! Lenth = 21907
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
 #%#var AG_abortOnPropertyWrite=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeSet:function(){b&&console.warn("AdGuard aborted property write: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -438,6 +438,7 @@
 18comic.vip##div[data-group^="skyscraper_"]
 18comic.vip#?#.thumb-overlay-albums > div[class][data-group^="photo_center_games_"]:has(> a[target="_blank"] > img)
 18comic.vip,18comic.org##div[data-height="250"][data-width="300"]
+18h.animezilla.com###manga-bottom
 18h.avmimi.com##body > p[align="center"]:first-child
 18h.avmimi.com##body > table[width="100%"]:nth-child(2)
 18moe.org##.alignnone[alt="恰饭广告"]
@@ -1370,7 +1371,7 @@
 @@/adverts/*$domain=onlychild.cn
 @@/adview_*_ads_300x250.js$domain=itbaoku.cn
 @@/adview_*_ads_300x250.js$domain=yaociyuan.bid
-@@/adview_pic_$domain=bigpixel.cn|itbaoku.cn|laimanhua.net|lfqie.com|lingjike.com|mahua.com|mati.hk|meiyouad.com|mh160.com|reh.tw|silisili.in|sssam.com|yanyue.cn|zgpingshu.com
+@@/adview_pic_$domain=bigpixel.cn|fffmo.com|itbaoku.cn|laimanhua.net|lfqie.com|lingjike.com|mahua.com|mati.hk|meiyouad.com|mh160.com|reh.tw|silisili.in|sssam.com|yanyue.cn|zgpingshu.com
 @@/adview_pic_$domain=doutula.com|fastadmin.net|toolfk.com|xclient.info
 @@/advs/*$domain=ciros.com.cn|gotobuy.com.tw|sj-touch.com
 @@/adx.$domain=tanx.com
@@ -2547,6 +2548,8 @@ alu.cn##.Tg_390x60
 alu.cn##.Tg_590x60
 alypw.com##.adbkk
 alypw.com##.ceadd
+am730.com.hk#?#.newslist-row > li.newslist-item:has(> div.adbox)
+am730.com.hk,downsx.net##.adbox
 amazon.cn#?#.s-result-item:-abp-has(> .s-item-container > h5 .s-sponsored-info-icon)
 ananvod.com##.rbPicAll
 android-doc.com,apk.tw,chaojizhibo.net,chtoen.com,dizhishengcheng.com,doitwell.tw,epinv.com,ff14angler.com,fxpan.com,haoweichi.com,logi.im,lspdfrcn.com,moa.tw,moe48.com,numberempire.com,playok.com,reh.tw,shenfendaquan.com,vaptcha.com#@#ins.adsbygoogle
@@ -4077,7 +4080,6 @@ downkr.com#@#.address-left > ul:nth-child(2)
 download.csdn.net##.ad_area_1
 download.csdn.net##.quake-slider
 downmsn.com###downShow_tellDownload
-downsx.net##.adbox
 downxia.com###gaosu_div0
 downyi.com###BzDown
 downyi.com##.bzYouDao
@@ -6521,6 +6523,7 @@ lz13.cn##.left_box3
 lz13.cn##.left_box4
 lz13.cn##.left_box5
 lzacg.one##.content-layout .zib-widget > .textwidget > a[target="blank"]
+lzacg.one##.custom-html-widget
 lzacg.one##.sidebar .zib-widget > .textwidget > a[target="blank"]
 lzacg.one#?#.content-layout .zib-widget:has(> .textwidget:only-child > a[target="blank"])
 lzacg.one#?#.sidebar .zib-widget:has(> .textwidget:only-child > a[target="blank"])
@@ -8278,9 +8281,9 @@ ssr.tools##.widget_custom_html:nth-child(n+2)
 ssr.tools,zhujiwiki.com##.asb-post-footer
 sssam.com##.widget_html_ad
 sssam.com#%#//scriptlet("set-constant", "ads", "")
-sstv.fun##.container > a[target="_blank"] > img
 sstv.pw##.container > a > img[style="width: 100%;"]
 ssuip.com###mask
+ssyy.ee##.container > a[target="_blank"] > img
 starbaby.cn###top_ad_show
 starbaby.cn###yindex_ads
 start.firefoxchina.cn##.mod-delay-resource
@@ -8815,6 +8818,7 @@ waipian5.com##.popup
 waipian5.com##.shortcuts-mobile-overlay
 waipian5.com#@#a[href*=".umtrack.com/"]
 wallstreetcn.com#@#.banner
+wandhi.com##.table-bordered
 wandhi.com##a[style="display: inline-block;position: relative"]
 wangfz.com##div[class^="my-ad-"]
 wanmeikk.me##a[href="http://qq.wanmeikk.me/index"]
@@ -10393,6 +10397,7 @@ zzzyk.com###Tinfo
 ||58cdn.com.cn/*.gif$domain=mmff30.com
 ||58cdn.com.cn/ds/tgbrand/*.js
 ||58cdn.com.cn/ds/zhuangxiu/jzad-
+||58cdn.com.cn/nowater/webim/big/n_v2acfbdb173d7a411a89aff3ae0cc05d71.
 ||58cdn.com.cn/resource/xxzl/xxfw/
 ||58file.com/down/xyk.
 ||58tg.com^$third-party
@@ -10538,6 +10543,7 @@ zzzyk.com###Tinfo
 ||6u4j.icu^
 ||6v4.cn^$third-party
 ||6vhao.tv/d/
+||6yso.com/wp-content/uploads/*-300-x-
 ||70.86.24.120:8060/
 ||7011.stia.cn^
 ||7067.top^
@@ -10715,6 +10721,8 @@ zzzyk.com###Tinfo
 ||8maple.ru/comic.jpg
 ||8maple.ru/dzcm$redirect=1x1-transparent.gif,domain=8maple.ru
 ||8maple.ru/dzcm$rewrite=abp-resource:1x1-transparent-gif,domain=8maple.ru
+||8mg050.n3cdn1.secureserver.net^*.gif
+||8mg050.n3cdn1.secureserver.net^*/960
 ||8o9m.cn^
 ||8q2h.icu^
 ||8s8s.com/data/banner/
@@ -12175,6 +12183,7 @@ zzzyk.com###Tinfo
 ||blxfqq.com^
 ||blz105.com/player/ad.html
 ||bm999999.com^$popup
+||bmiea.xyz^
 ||bmjs.xzw.com^
 ||bmmogb.xyz^
 ||bmp.ali213.net/js/
@@ -13843,6 +13852,7 @@ zzzyk.com###Tinfo
 ||etf88.com/jjb/*_ad$script
 ||etf88.com/swf/
 ||etgameshop.com^
+||etienlw.top^
 ||etkht.cn^
 ||ettoday.net/ad/*_action.js
 ||ettoday.net/banners/
@@ -14348,6 +14358,7 @@ zzzyk.com###Tinfo
 ||ggcode.2345.com^
 ||ggdm1.nhaidu.net^
 ||ggdrfh5.com^
+||ggdumze.cn^
 ||ggg*.com/static/js/common.js
 ||ggglxue.cn^
 ||gggppp666.com^
@@ -14845,6 +14856,7 @@ zzzyk.com###Tinfo
 ||hgehse.site^
 ||hgf8hck.com^
 ||hghjks2.com^
+||hgiaef.site^
 ||hgiafe.site^
 ||hgibbei.cyou^
 ||hgjjk45.com^
@@ -15703,6 +15715,7 @@ zzzyk.com###Tinfo
 ||jg1668.com^$third-party
 ||jgnlaiga.fun^
 ||jgqub.cn^
+||jgsajfggv.xyz^
 ||jgstny.com^$third-party
 ||jh001.cc^
 ||jh16csf.com^
@@ -16054,10 +16067,12 @@ zzzyk.com###Tinfo
 ||jxdown.com^$third-party
 ||jxjvtr.xyz^
 ||jxlida.ink^
+||jxmiyrh.icu^
 ||jxncs1.com^
 ||jxnews.com.cn/assets/js/dspshow.js
 ||jxnews.com.cn/first/js/home/index_ad
 ||jxnews.com.cn^*_ad_
+||jxtejf.xyz^
 ||jxtest.bolecdn.com/player/*.gif
 ||jxuu.online^
 ||jxvyrv.xyz^
@@ -17360,6 +17375,7 @@ zzzyk.com###Tinfo
 ||mygeek.cn/pic_$domain=dapenti.com
 ||myhack58.com/Articleacb0
 ||myhack58.com^*0$script
+||myhaitang.cc/assets/public/*.js
 ||myhao.club^
 ||mylikechat.com^$third-party
 ||mypianku.net/ajax/MyJs/
@@ -17724,6 +17740,7 @@ zzzyk.com###Tinfo
 ||okew.top^
 ||okkkk.com^
 ||okmhmkjnm.com^
+||okmhnd.com^
 ||okmwfq.xyz^
 ||okoc.top^
 ||okod.top^
@@ -17979,6 +17996,7 @@ zzzyk.com###Tinfo
 ||peishuning1.cn^
 ||pejrq.xyz^
 ||pekingpk10.com^
+||pemsrv.com^$popup
 ||penglangyyds.com^
 ||pengpailm.online^
 ||pengtu.cc^*.png
@@ -20077,6 +20095,7 @@ zzzyk.com###Tinfo
 ||ud860ec7.com^
 ||udajswf.cn^
 ||udeoenm.cn^
+||udeztrb.cn^
 ||udiab1.jianshu.com^
 ||udifvi.cn^
 ||udn.com.tw/upf/*_banners/BD/
@@ -20140,6 +20159,7 @@ zzzyk.com###Tinfo
 ||unjld.com^
 ||unmnkkq.cn^
 ||unpfqc9.com^
+||unpkg.com/sejie
 ||unpkg.com^$badfilter
 ||untitled.dwstatic.com^
 ||uo12.com^
@@ -20881,6 +20901,7 @@ zzzyk.com###Tinfo
 ||xibqq.xyz^
 ||xiexingcun.com/tongji.js
 ||xiexingcun.com/tyong.js
+||xiezhuo038.cn^
 ||xihuangdushu.com^
 ||xihufe.com^
 ||xiiljoy.cn^
