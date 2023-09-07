@@ -1,9 +1,9 @@
 [uniartisan's Adblock List Lite]
-! Version: 202309060121
+! Version: 202309070118
 ! Title:  uniartisan's Adblock List Lite
 ! Expires: 1 days (update frequency)
 ! URL = https://github.com/uniartisan/adblock_list
-! Lenth = 20810
+! Lenth = 20819
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
 #%#var AG_abortOnPropertyWrite=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeSet:function(){b&&console.warn("AdGuard aborted property write: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -2701,9 +2701,7 @@ axios-js.com##.lessonlist
 axios-js.com##.recommand
 axios-js.com##.vultr-desc
 axjbt.com,avcao.cc#%#//scriptlet('abort-on-property-read', 'myclick')
-axutongxue.com,axutongxue.net###qtqwb
-axutongxue.com,axutongxue.net###uuuui
-axutongxue.com,axutongxue.net###yfasufd
+axutongxue.com,axutongxue.net###kkkkbbb
 axutongxue.net###uuuui
 axutongxue.net##body > article[style]
 axutongxue.net#%#//scriptlet('prevent-setTimeout', 'getCookie("')
@@ -12959,6 +12957,7 @@ zzzyk.com###Tinfo
 ||deansent.top^
 ||debugease.com/static/js/show.js
 ||dedcrfvdj.xyz^
+||degjidp.icu^
 ||dehaer.site^
 ||dehua.ixinfan.com^
 ||deliver.ifeng.com^
@@ -13818,6 +13817,7 @@ zzzyk.com###Tinfo
 ||frxcdn.xyz^
 ||fsclzs.com/Ad_User/
 ||fsdnp.cyou^
+||fsjjrbz.cn^
 ||fsnpbh.xyz^
 ||fspjjp.xyz^
 ||fszpzd.xyz^
@@ -14297,6 +14297,7 @@ zzzyk.com###Tinfo
 ||haiao.wang^
 ||haibomuye.com/forever/
 ||haili-spitzer.com^
+||haise10.top^
 ||haituie.com^*.gif
 ||haiwainet.cn*/k.js
 ||haiwaiyy.com/B970X90.gif
@@ -14397,6 +14398,7 @@ zzzyk.com###Tinfo
 ||hdsrc-a.akamaihd.net^
 ||hdtu.oss-cn-beijing.aliyuncs.com^
 ||hdxjtl.xyz^
+||head4.net/ad_c_outlink.php
 ||hebei.com.cn/eap/
 ||hebei.com.cn/sys/online_calc.js
 ||hebtv.com/d/a/thea
@@ -14693,10 +14695,12 @@ zzzyk.com###Tinfo
 ||huya.com/leaf/*=vodadv&$redirect=noopmp3-0.1s,domain=huya.com
 ||huya.com/leaf/*=vodadv&$rewrite=abp-resource:blank-mp3,domain=huya.com
 ||huyaimg.msstatic.com/cdnimage/roomad/
+||hvdath.xyz^
 ||hvfubp.xyz^
 ||hvhudp.xyz^
 ||hwanjia.com^
 ||hwhefj.xyz^
+||hwnod.xyz^
 ||hxbt.alading123.com^
 ||hxes.cn^
 ||hxhohd.xyz^
@@ -16445,6 +16449,7 @@ zzzyk.com###Tinfo
 ||mdcxyo.xyz^
 ||mddcloud.*/oweApi/ad/
 ||mdfsbn.com^$third-party
+||mdhxyhl.cn^
 ||mdi5k.cn^
 ||mdjf9vh9.shop^
 ||mdjf9vh9.xyz^
@@ -18520,6 +18525,7 @@ zzzyk.com###Tinfo
 ||sohu.com/mdevp/*-advert/
 ||sohu.com/s/sohuplayer/iplay.html?*&autoplay=true$domain=eetop.cn
 ||sojson.com/ps/list.
+||solaron.top^
 ||solomon89.xyz^
 ||somanhua.com/smh/
 ||somddgo.com^
@@ -19408,6 +19414,7 @@ zzzyk.com###Tinfo
 ||venulaevavs.com^
 ||vercel.app/ads/
 ||vewdk.cyou^
+||vexilorath.com^
 ||vezvpd.xyz^
 ||vfjsa6do.icu^
 ||vfqnhif.cn^
@@ -19525,6 +19532,7 @@ zzzyk.com###Tinfo
 ||vydbvp.xyz^
 ||vydqknuy.xyz^
 ||vyps.fun^
+||vyreat.icu^
 ||vyye.cn^
 ||vz81m4.top^
 ||vzeuvcdi.icu^
@@ -20495,6 +20503,7 @@ zzzyk.com###Tinfo
 ||zcczrvsaqw.world^
 ||zcdfll.xyz^
 ||zcfhi.cn.com^
+||zcgqsd.icu^
 ||zchkz.cn^
 ||zcrui.com^
 ||zcvyzsyd.icu^
