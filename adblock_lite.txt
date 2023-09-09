@@ -1,9 +1,9 @@
 [uniartisan's Adblock List Lite]
-! Version: 202309080157
+! Version: 202309090125
 ! Title:  uniartisan's Adblock List Lite
 ! Expires: 1 days (update frequency)
 ! URL = https://github.com/uniartisan/adblock_list
-! Lenth = 20829
+! Lenth = 20847
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
 #%#var AG_abortOnPropertyWrite=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeSet:function(){b&&console.warn("AdGuard aborted property write: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -1321,8 +1321,8 @@
 @@.adserver.$domain=litv.tv
 @@.com/ad.aspx|$domain=xdingdian.cc
 @@.com/adv/$domain=my.ctrip.com
-@@.com/js/a_d/$domain=colamanhua.com
-@@.com/logo/ad.$domain=colamanhua.com
+@@.com/js/a_d/$domain=colamanga.com
+@@.com/logo/ad.$domain=colamanga.com
 @@.gif#$domain=b168.net|cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.google-analytics.com%2Fanalytics.js$domain=free.com.tw
 @@.jpg#$domain=huhupan.com
@@ -1713,7 +1713,7 @@
 @@||citytalk.tw/js/ct/common/v3/ui/fblike/FBLike.html
 @@||cloudflare.com/ajax/libs/fingerprintjs2/*/fingerprint2.min.js$domain=nfmovies.com
 @@||cloudflare.com/ajax/libs/fuckadblock/$domain=seselah.com
-@@||cloudflare.net^$script,domain=colamanhua.com
+@@||cloudflare.net^$script,domain=colamanga.com
 @@||club.tgfcer.com^$generichide
 @@||cmbc.com.cn^*ads/
 @@||cmbchina.com/ads/
@@ -1985,6 +1985,7 @@
 @@||jsjiami.com^$generichide
 @@||jsqsjn.com^$script,domain=fyxfcw.com
 @@||jswenhui.com^*/ad/
+@@||juduo.cc^$generichide
 @@||jwpcdn.com/player/plugins/googima/*/googima.js$domain=viu.tv
 @@||kaitao.cn/public/wenda/ad/css/ds-un-detail.css
 @@||kayixin.com^*/advert
@@ -3683,9 +3684,9 @@ coderutil.com##.head-recommend-adv
 coderutil.com##.search-module + a
 codexiu.cn##.blog-twitter:first-child
 cokemine.com,eveaz.com,jubuzz.com,skyarea.cn,tianfateng.cn#@#.category-share
+colamanga.com##iframe[style*="important"]
 colamanga.com#%#//scriptlet("prevent-setTimeout", "loadErrorTip")
-colamanhua.com##iframe[style*="important"]
-colamanhua.com#@#.gg_950
+colamanga.com#@#.gg_950
 com.tw###space > a[target="_blank"] > img[width="160"]
 com.tw#$#img[width="960"][height="90"] { height: 0 !important; }
 comefromchina.com##.ad_navtext_11 > li:nth-child(n+2)
@@ -4586,6 +4587,9 @@ flyblog.cc,maxfoodfun.com#?#.article-body > div[style]:has(> div[style] > div[id
 flyzy2005.com##.baidu_ad
 flyzy2005.com##.widget_kratos_ad
 fmdisk.com##div[style="width: 960px; margin: 0 auto; height:900px; color: #F00; font-size: 14px; text-align:left;"] > p
+fnjiasu.com##.layui-layer
+fnjiasu.com##.sidebar_download
+fnjiasu.com##.swiper-container
 focus.cn##.index-app-download
 focus.cn##.module-common-float-im
 focus.cn##.qhb-fixed
@@ -7227,6 +7231,9 @@ olgame.tw##.nex_floor_banner
 olgame.tw##.nex_index_ads
 olgame.tw##.nex_mid_ads
 on.cc#@##CONTENTAD
+onebox.mydown.com##.advertisement_pic
+onebox.mydown.com##.fcAgain
+onebox.mydown.com##.fcGg
 oneinstack.com##.sidebar > .widget:last-child
 oneinstack.com##.w-ad
 onemanhua.com##body > div[style^="position: fixed;"][style*="z-index:"]
@@ -11032,6 +11039,7 @@ zzzyk.com###Tinfo
 ||acwifi.net/wp-content/uploads/2019/11/20191119.jpg
 ||acwifi.net/wp-content/uploads/2022/08/0825-750.png
 ||acys.fun^
+||ad*.on.cc^
 ||ad-1258444056.cos.accelerate.myqcloud.com^
 ||ad-api.cnblogs.com^
 ||ad-img.diyidan.net^
@@ -11047,6 +11055,7 @@ zzzyk.com###Tinfo
 ||ad.doubleclick.net^$~object-subrequest,third-party
 ||ad.fx168api.com^
 ||ad.gmw.cn^
+||ad.hot-mob.com^
 ||ad.juksy.com^
 ||ad.kshuiz.top^$third-party
 ||ad.muyang888.top^
@@ -11115,6 +11124,7 @@ zzzyk.com###Tinfo
 ||advgjm.com^
 ||adwordsing.com/img/1.jpg
 ||adwordsing.com/img/2.jpg
+||adx.36kr.com^
 ||adxxx.info^$domain=avgle.com
 ||adyun.com^$third-party
 ||adzp.cn^
@@ -11552,6 +11562,7 @@ zzzyk.com###Tinfo
 ||azhhr.cn^
 ||azhibo.*/media/aimg/*.gif
 ||azhibo.*images/leisu.png
+||azukgee.cn^
 ||azureedge.net/wp-content/cache/minify/3c6d7.js
 ||azureedge.net/wp-content/cache/minify/d2299.js
 ||azureedge.net/wp-content/uploads/*-AD0
@@ -12654,7 +12665,7 @@ zzzyk.com###Tinfo
 ||codesocang.com/js/a.js
 ||codesocang.com/plus/*baoyue
 ||cofz9.top^
-||colamanhua.com/sw.js
+||colamanga.com/sw.js
 ||comefromchina.com/images/128bestbuy
 ||comm100.cn/livechatserver/chatbutton.*&res=
 ||commondisplay-a.akamaihd.net/cri/*.htm?cat=
@@ -12973,6 +12984,7 @@ zzzyk.com###Tinfo
 ||denpvh.xyz^
 ||derew6xbsc.xyz^
 ||dertyhsf.xyz^
+||desac10.icu^
 ||desac7.icu^
 ||destc10.icu^
 ||destc8.icu^
@@ -14496,6 +14508,7 @@ zzzyk.com###Tinfo
 ||hiad.myweb.hinet.net^
 ||hiad.vmall.com^
 ||hiao.com/node/node_27508.htm
+||hiaxj.com/dbxf/
 ||hibaby.ren^
 ||hibikiluler.top^
 ||hibiquan.com/uploads/images/
@@ -14704,6 +14717,7 @@ zzzyk.com###Tinfo
 ||hvfubp.xyz^
 ||hvhudp.xyz^
 ||hwanjia.com^
+||hwfoct.icu^
 ||hwhefj.xyz^
 ||hwnod.xyz^
 ||hxbt.alading123.com^
@@ -15561,6 +15575,7 @@ zzzyk.com###Tinfo
 ||jwadakesa.cyou^
 ||jwandla.top^
 ||jweod.xyz^
+||jweoe.xyz^
 ||jwjdpab.cn^
 ||jwronx.xyz^
 ||jwujvjo.cn^
@@ -17292,6 +17307,7 @@ zzzyk.com###Tinfo
 ||pchome.com.tw/js/fancybox/
 ||pchome.com.tw/js/overlay_ad.js
 ||pchome.net/flow.php
+||pchznf.xyz^
 ||pcmtf.cn^
 ||pcmx.autohome.com.cn/impress?
 ||pconline.com.cn/_hux_/
@@ -19345,6 +19361,7 @@ zzzyk.com###Tinfo
 ||uuu9.com/photolog.html
 ||uuu9.tieba.com^$subdocument
 ||uuuxyjh.cn^
+||uuzwvqc.cn^
 ||uwadakest.cyou^
 ||uwandlt.top^
 ||uwants.com/dfp_forum.php?au=Uwants_Web_
@@ -19856,6 +19873,7 @@ zzzyk.com###Tinfo
 ||xbldocp.xyz^
 ||xbtw.com^
 ||xbvmrx.xyz^
+||xbyoujv.icu^
 ||xc.gouchezj.com^
 ||xc.macd.cn^
 ||xc.mydrivers.com^
