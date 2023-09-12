@@ -1,9 +1,9 @@
 [uniartisan's Adblock List Lite]
-! Version: 202309110143
+! Version: 202309120101
 ! Title:  uniartisan's Adblock List Lite
 ! Expires: 1 days (update frequency)
 ! URL = https://github.com/uniartisan/adblock_list
-! Lenth = 20860
+! Lenth = 20876
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
 #%#var AG_abortOnPropertyWrite=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeSet:function(){b&&console.warn("AdGuard aborted property write: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -2503,6 +2503,7 @@ aishs.top###frameu9916W_left > .block:nth-child(-n+6)
 aiweibk.com##.lili
 aiweibk.com##.pc
 aiyifan.tv,iyf.tv#%#//scriptlet('abort-on-property-read', 'Object.prototype.ShouldPlayAds')
+aiyifan.tv,iyf.tv#%#//scriptlet('abort-on-stack-trace', 'Object.prototype.publicManager', 'invokeInterstitial')
 aiyifan.tv,iyf.tv#%#//scriptlet('set-constant', 'Object.prototype.captions', 'emptyObj')
 aiyuke.com###Playerpad
 aiyuke.com###js-ad-type4
@@ -9007,6 +9008,11 @@ world.huanqiu.com##.ad_txt
 world.huanqiu.com##.img_flow.ad_all
 world.huanqiu.com##div[class^="ad_t"]
 world.huanqiu.com#@#.ad_all
+world68.com##.ad
+world68.com##.content_l_flml.zzs
+world68.com##.guanggao
+world68.com##.head_m
+world68.com##.zzs_ad
 worldjournal.com##.banner-zone
 worldve.com###fdkDiv
 worldve.com###img
@@ -13727,6 +13733,7 @@ zzzyk.com###Tinfo
 ||ffdcpvv.cn^
 ||fgdtln.xyz^
 ||fgetmzx.icu^
+||fgnzdb.xyz^
 ||fgo22.info^$third-party
 ||fgre9.top^
 ||fh21.com.cn/js/passport/createQuickMenu.js
@@ -15605,6 +15612,7 @@ zzzyk.com###Tinfo
 ||jyfw.cn/gonggong/jiayu/cf_
 ||jyfw.cn/nav/cf_
 ||jygiizv.icu^
+||jynthelon.com^
 ||jyrd.com/statics/*/js/baizhu/
 ||jyt58.top^
 ||jyvith.xyz^
@@ -16390,6 +16398,7 @@ zzzyk.com###Tinfo
 ||m1905.com/asp_js/k.js
 ||m1955.com/template/qq/images/playad/
 ||m2.lelemh.com^
+||m4pgay.com^
 ||m5.66077.cn^
 ||m6ku1.cn^
 ||m7dmtv.top^
@@ -17633,6 +17642,7 @@ zzzyk.com###Tinfo
 ||qbd2.site^
 ||qbd3.site^
 ||qbd4.site^
+||qbhmz3.com^
 ||qbox.me/FlnVIdUeIo_LrXyGiOL0OFw0Gpa7
 ||qbox.me/FnjnjJhJZlKZEGJ7qV1AocqusFbf
 ||qbtd.xyz^
@@ -18288,6 +18298,7 @@ zzzyk.com###Tinfo
 ||sfsft.com/ckplayer/1config.js
 ||sganilglb.cyou^
 ||sgegie.fun^
+||sgeth7.icu^
 ||sgg.southcn.com^
 ||sgk.xyz/static/js/pc.js
 ||sgnlaigb.fun^
@@ -19140,6 +19151,7 @@ zzzyk.com###Tinfo
 ||tuwaqtjcood.com^
 ||tuyiyi.com/tuyiyi/m.js
 ||tuyqiolni.cyou^
+||tuyyex.icu^
 ||tv002.com/img/down1_ssp1.gif
 ||tv2box.com/img_1g/
 ||tv699.com/AllTemplet/js/
@@ -19709,6 +19721,7 @@ zzzyk.com###Tinfo
 ||whbhsoft.cn^
 ||whbn.xyz^
 ||whdx.cc/js/
+||whe0nqk.icu^
 ||whfpbc.99.com.cn^
 ||whichav.*/qq/qq.js
 ||whnews.cn/wh_public/xuxu/
@@ -20008,6 +20021,7 @@ zzzyk.com###Tinfo
 ||xitongku.cc^
 ||xitongzhijia.net/theme/2020/js/10033_
 ||xiu8.com/baidu-tieba/*&forum_name=
+||xiumb8.com/js/lm_
 ||xiurenji.cc/heji/
 ||xiuwaiyyds.com^
 ||xixhx.com^
@@ -20075,6 +20089,7 @@ zzzyk.com###Tinfo
 ||xnzetb.xyz^
 ||xoimg.com^$domain=18board.com|18p2p.com
 ||xokcaxw.cn^
+||xolerkr.cn^
 ||xonlines.com/upload/gg/
 ||xonlines.com/yyh_qp_200_200.png
 ||xopew.cyou^
@@ -20700,6 +20715,7 @@ zzzyk.com###Tinfo
 ||zlongad.com^$third-party
 ||zlsynmlq.fun^
 ||zlsyuulq.cam^
+||zlyhslx.icu^
 ||zlyk.com/Runtime/Js/footer.js
 ||zlyk.com/Runtime/Js/m_footer_top.js
 ||zlyk.com/Runtime/Js/m_nav_bottom.js
