@@ -1,9 +1,9 @@
 [uniartisan's Adblock List Lite]
-! Version: 202309120101
+! Version: 202309130127
 ! Title:  uniartisan's Adblock List Lite
 ! Expires: 1 days (update frequency)
 ! URL = https://github.com/uniartisan/adblock_list
-! Lenth = 20876
+! Lenth = 20897
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
 #%#var AG_abortOnPropertyWrite=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeSet:function(){b&&console.warn("AdGuard aborted property write: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -673,9 +673,11 @@
 360kuai.com###pendant_interactive_gg
 360kuai.com###task__modal__container
 360kuai.com###xunjia-modal-btn
+360kuai.com##.article__content__yyconfig
 360kuai.com##.bottom_rectangle_gg_outer_box
 360kuai.com##.detail-top-banner
 360kuai.com##.detail__top__title__under
+360kuai.com##.g4.undefined
 360kuai.com##.k-float-btn__qrcode__body
 360kuai.com##.novel_galery_icon
 360kuai.com##.taskbar
@@ -1693,6 +1695,7 @@
 @@||cdn.sssam.com/static/js/*.js
 @@||cdn.staticfile.org^$script,domain=00ksw.com|147xiaoshuo.com|91zww.com|biququ.info|bxwx.live|lzbao.net|shenzu.org
 @@||cdn.staticfile.org^$script,domain=movieffm.net
+@@||cdn.theguardian.tv/ad/*.m3u8$domain=theguardian.com
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/3.2.1/fuckadblock.min.js$domain=papalah.com
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/*/videojs.ads.min.js$domain=linetv.tw
 @@||cgmodel.com/plugin/share/
@@ -4693,10 +4696,11 @@ fxedu.com.cn#@#.ad_r
 fxykx.com##a[href*="zyttx.com/"]
 fxykx.com,pantsu.cat#@##banner_ad
 fydisk.com###vbox
+fzd3.com###comiis_app_block_22
+fzd3.com###comiis_app_block_74
+fzd3.com###comiis_app_block_84
 fzd3.com###diy_cmn1
 fzd3.com###tuiguang
-fzdao.cn###datu
-fzdao.cn##.adlan
 fznews.com.cn##.kuang100_right
 g-years.com,ghoffice.com,gpsuu.com,mydigit.cn###main > .textMes
 galacg.me##.sidebar-top
@@ -9292,6 +9296,7 @@ yshw1.com###diynews_ad1
 ysxs8.vip##.ysxs8_w960_1
 ytbbs.com###dd1
 ytbbs.com##.ftop_ad_2016
+yuanxue365.com#?#.content-main > div > .container-fluid:has(span:contains(广告))
 yule.iqiyi.com##div[style="width:180px;padding:25px 0 20px 20px;float:right;margin-right: 30px;"]
 yun.cn##div[class*="ad-block"]
 yunduanxin.xyz###adb-mask
@@ -9724,6 +9729,7 @@ zzzyk.com###Tinfo
 ||126.net^$script,redirect=noopjs,domain=rjno1.com
 ||126.net^*analysis
 ||1267a.xyz^
+||126ccb.xyz^
 ||127.net/2018/08/15/71ee02b5b61c4090b3ce0116306596c2.jpeg
 ||127.net/external/js6promote
 ||127.net/external/js6public126_
@@ -11385,6 +11391,7 @@ zzzyk.com###Tinfo
 ||analytics.21cn.com^
 ||analytics.techweb.com.cn^
 ||analytics.tv189.cn^
+||anei.tv^$third-party
 ||anews7.nvwu.com^
 ||anfw.com.cn^
 ||angelweb.cn/Inc/AngelG.js
@@ -12055,6 +12062,7 @@ zzzyk.com###Tinfo
 ||bny9.cn^
 ||bnz9.cn^
 ||boardx.huanqiu.com^
+||boats8.top^
 ||bobdz.com^
 ||bobo.com/special/mod-follow/
 ||bobo.com^$third-party
@@ -12656,6 +12664,7 @@ zzzyk.com###Tinfo
 ||cnzz.cn/ssp_
 ||cnzz.yifenghuyu.com^$third-party
 ||cnzzla.com/public/scripts/money.js
+||cocloud.site^
 ||cocomanga.com/sw.js
 ||cod.southmoney.com^
 ||code.bizdirlib.com^
@@ -13823,6 +13832,7 @@ zzzyk.com###Tinfo
 ||fpdisplay.com/upload/n_ad/
 ||fq67.top^
 ||fqla.top^
+||fqpxzr.xyz^
 ||fqsokh.xyz^
 ||fragment.firefoxchina.cn/html/
 ||frame.enet.com.cn/a.php
@@ -14727,6 +14737,7 @@ zzzyk.com###Tinfo
 ||hwanjia.com^
 ||hwfoct.icu^
 ||hwhefj.xyz^
+||hwivedn.icu^
 ||hwnod.xyz^
 ||hxbt.alading123.com^
 ||hxes.cn^
@@ -15538,6 +15549,7 @@ zzzyk.com###Tinfo
 ||jsdelivr.net/gh/yaofa88/bifa@main/*960
 ||jsdelivr.net/npm/live2d-
 ||jsf.cnlinfo.net^
+||jsgdvkjz.com^
 ||jsinfo.net^$third-party
 ||jsl44w.xyz^
 ||jslbaha.top^
@@ -17052,6 +17064,7 @@ zzzyk.com###Tinfo
 ||nwdjlx.xyz^
 ||nwecd.xyz^
 ||nweon.com/wp-content/repo/ad/
+||nwera.xyz^
 ||nwmol.top^
 ||nwrazu.cn^
 ||nwuidsbjak.com^
@@ -17208,6 +17221,7 @@ zzzyk.com###Tinfo
 ||ossfile001.com^
 ||other.v.duowan.com^
 ||othoj.xyz^
+||otienlk.top^
 ||otoeew.xyz^
 ||otreh.xyz^
 ||otwiss.xyz^
@@ -17467,6 +17481,7 @@ zzzyk.com###Tinfo
 ||pjjlbjd.cn^
 ||pjsbuhl.icu^
 ||pjtime.com/js/show_ad
+||pjy55d.com^
 ||pkeog.cn^
 ||pki.net.cn/public/*/plugins/
 ||pki.net.cn/public/1/assets/js/custom/tt.
@@ -17918,6 +17933,7 @@ zzzyk.com###Tinfo
 ||qzngisyy.xyz^
 ||qzone.la/Scripts/m.js
 ||qzos9ou.xyz^
+||qzpbwq.com^
 ||qzsfmbt.cn^
 ||qzwb.com/phpstat/
 ||r.99waiyu.com^
@@ -19363,6 +19379,7 @@ zzzyk.com###Tinfo
 ||usfw2eu.icu^
 ||usingde.com^$third-party
 ||uslbaht.top^
+||uslsxe.com^
 ||usnignst.xyz^
 ||usnoownmt.fun^
 ||ustv123.com/images/axd.js
@@ -19928,6 +19945,7 @@ zzzyk.com###Tinfo
 ||xecner.top^
 ||xeghes.fun^
 ||xeiatmf.cn^
+||xeikwh.icu^
 ||xeiyt.cyou^
 ||xeynozl.icu^
 ||xf2pf.top^
@@ -20116,6 +20134,7 @@ zzzyk.com###Tinfo
 ||xstt5.com/skin/v3/js/dibu.js
 ||xstt5.com/template/js/fx
 ||xtbzff.xyz^
+||xtjpdfr.cn^
 ||xtpez.xyz^
 ||xtpwfb.xyz^
 ||xtxa.net^
@@ -20475,12 +20494,14 @@ zzzyk.com###Tinfo
 ||yxgfcj.com^$third-party
 ||yximgs.com/bs2/adcarsku/sku1563a96c-38ca-4563-a4b5-522208113126.
 ||yximgs.com/bs2/adcarsku/sku9c0e68cc-2f12-4e47-a340-a7293ee88c88.
+||yxvoud.com^
 ||yxzp.net/left.js
 ||yy17173.dtime.com^
 ||yy18.info/yyads/
 ||yy18.info^*thanks$popup
 ||yy8090.vip/js/abc/
 ||yye2.top^
+||yyefao.com^
 ||yyek3cdeo.cyou^
 ||yyepa.cyou^
 ||yyetss.com/static/modal.js
